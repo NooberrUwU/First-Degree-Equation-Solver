@@ -23,7 +23,7 @@ while True:
   b = check_input(b)
 
   #If statement: If both "a" value and "b" value are valid, execute the main calculate function. Else, the file will print the error sentence.
-  if a and b:
+  if (a and b) or (a == 0.0 and b) or (b == 0.0 and a) or (a == b == 0.0):
     str_a = str(a)
     str_b = str(b)
   
